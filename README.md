@@ -10,6 +10,7 @@ This is the next-generation OneBusAway web application, built on top of [SvelteK
 npm install
 cp .env.example .env
 # edit .env with your editor of choice
+npm run build
 npm run dev
 ```
 

@@ -11,7 +11,9 @@ export default defineConfig({
 		__SHOW_REGION_NAME_IN_NAV_BAR__: JSON.stringify(
 			process.env.SHOW_REGION_NAME_IN_NAV_BAR !== 'false'
 		),
-		__OBA_LOGO_URL_DARK__: JSON.stringify(process.env.OBA_LOGO_URL_DARK || '')
+		__OBA_LOGO_URL_DARK__: JSON.stringify(process.env.OBA_LOGO_URL_DARK || ''),
+		// Inject custom dark-mode preference into client code
+		'import.meta.env.PREFER_DARK_MODE': JSON.stringify(process.env.PREFER_DARK_MODE ?? '')
 	},
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}'],

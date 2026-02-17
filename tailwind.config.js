@@ -24,7 +24,7 @@ export default {
 				surface: process.env.COLOR_SURFACE || '#ffffff',
 				'surface-foreground': process.env.COLOR_SURFACE_FOREGROUND || '#000000',
 
-				'surface-dark': '#111827',
+				'surface-dark': '#355db4',
 				'surface-foreground-dark': '#ffffff',
 
 				// flowbite-svelte - dynamically generated from brand accent color
