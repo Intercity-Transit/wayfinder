@@ -61,9 +61,5 @@ export function isStaySeatedTransition(legs, index) {
 	const prev = legs[index];
 	const next = legs[index + 1];
 
-	return (
-		prev?.mode === 'BUS' &&
-		next?.mode === 'BUS' &&
-		next?.interlineWithPreviousLeg === true
-	);
+	return prev?.mode === 'BUS' && next?.mode === 'BUS' && next?.interlineWithPreviousLeg === true;
 }
